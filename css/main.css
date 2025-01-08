@@ -1,0 +1,115 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrap {
+  width: 1200px;
+  height: 900px;
+  background-color: aqua;
+}
+/* 헤더 */
+header {
+  background-color: rgb(13, 129, 90);
+  width: 100%;
+  height: 100px;
+}
+/* 로고 */
+.logo {
+  width: 300px;
+  /* background-color: #727474; */
+  float: left;
+}
+.logo h1 {
+  font-size: 40px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+}
+/* 메뉴 */
+.menu-top li {
+  background-color: blueviolet;
+  width: calc((100% - 400px) / 4);
+  list-style: none;
+  float: left;
+  margin: 70px 10px 0 10px;
+  text-align: center;
+}
+.menu-top li a {
+  color: #fff;
+  text-decoration: none;
+}
+/* ----------------------메인--------------------- */
+/* --------------상단 */
+.main-image {
+  width: 100%;
+  height: 300px;
+  /* background: url("../images/photo-3.jpg"); */
+  background-color: rgb(255, 188, 88);
+}
+/* -------------하단 */
+.main-text {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(173, 171, 255);
+}
+.main-text .notice {
+  float: left;
+  width: 50%;
+  height: 400px;
+  background-color: rgb(94, 255, 0);
+}
+/* -------------오른쪽 아이콘 세 개 */
+
+.main-text .picture {
+  width: 50%;
+  height: 400px;
+float: left;
+}
+.main-text .picture .img {
+  /* overflow: hidden; */
+  display: inline-block;
+  margin-left: 30px;
+}
+.main-text .picture .img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 100px ;
+}
+.main-text .picture .img p{
+    text-align: center;
+}
+
+/* ----------------------풋터-------------------------- */
+footer ul{
+    background-color: rgb(255, 98, 130);
+    width: 50%;
+    float: left;
+}
+footer ul li{
+    float: left;
+    width: calc(600px / 4);
+    list-style: none;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-right: 1px solid #ddd;
+    background-color: blueviolet;
+}
+footer ul li:last-child{
+    border: none;
+}
+footer .icons{
+    float: right;
+    margin: 35px 10px;
+}
+footer .address{
+    float: left;
+    background-color: blue;
+}
+/* footer .address::before{
+    content: "";
+    display: block;
+    clear: both;
+} */
