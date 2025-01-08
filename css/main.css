@@ -8,6 +8,11 @@
   width: 1200px;
   height: 900px;
   background-color: aqua;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
 }
 /* 헤더 */
 header {
@@ -20,6 +25,9 @@ header {
   width: 300px;
   /* background-color: #727474; */
   float: left;
+}
+.logo a{
+  text-decoration: none;
 }
 .logo h1 {
   font-size: 40px;
@@ -41,14 +49,14 @@ header {
   text-decoration: none;
 }
 /* ----------------------메인--------------------- */
-/* --------------상단 */
+/* --------------상단 이미지 돌담 배경*/
 .main-image {
   width: 100%;
   height: 300px;
   /* background: url("../images/photo-3.jpg"); */
   background-color: rgb(255, 188, 88);
 }
-/* -------------하단 */
+/* -------------왼쪽 하단 */
 .main-text {
   width: 100%;
   height: 400px;
@@ -60,6 +68,30 @@ header {
   height: 400px;
   background-color: rgb(94, 255, 0);
 }
+.main-text .text-box{
+  background-color: aquamarine;
+  border-bottom: 1px solid #bbb;
+  margin-top: 10px;
+  padding: 15px 0;
+}
+.main-text .notice .first, .second{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  /* background-color: rgb(127, 157, 255); */
+}
+.main-text .notice .first{
+  color: red;
+  background-color: bisque;
+  border-right: 1px solid #bbb;
+}
+.main-text .notice .text-detail{
+  padding: 15px;
+  list-style: none;
+}
+.main-text .notice .text-detail li{
+  padding: 5px;
+}
 /* -------------오른쪽 아이콘 세 개 */
 
 .main-text .picture {
@@ -70,13 +102,15 @@ float: left;
 .main-text .picture .img {
   /* overflow: hidden; */
   display: inline-block;
+  margin-top: 100px ;
   margin-left: 30px;
+  background-color: tomato;
 }
 .main-text .picture .img img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-top: 100px ;
+  
 }
 .main-text .picture .img p{
     text-align: center;
@@ -85,31 +119,36 @@ float: left;
 /* ----------------------풋터-------------------------- */
 footer ul{
     background-color: rgb(255, 98, 130);
-    width: 50%;
+    width: 500px;
     float: left;
 }
 footer ul li{
     float: left;
-    width: calc(600px / 4);
+    width: calc(500px / 4);
     list-style: none;
-    text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 5px;
+    text-align: center;
     border-right: 1px solid #ddd;
     background-color: blueviolet;
 }
+footer ul li a{
+  text-decoration: none;
+  font-size: 13px;
+}
+
 footer ul li:last-child{
     border: none;
 }
 footer .icons{
     float: right;
     margin: 35px 10px;
+    background-color: yellow;
 }
-footer .address{
+footer .address-box{
     float: left;
     background-color: blue;
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
 }
-/* footer .address::before{
-    content: "";
-    display: block;
-    clear: both;
-} */
+
